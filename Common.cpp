@@ -28,10 +28,21 @@ int* dataGnerator(int len)
     }
     return p;
 }
+int* dataGneratorRandom(int len)
+{
+    int* p = new int[len];
+    default_random_engine e;
+    for (int i = 0; i < len; i++) {
+        *(p + i) = e() % len;
+    }
+    return p;
+}
 void verification(int* p, int maxSize)
 {
+    static int i = 1;
     default_random_engine e;
-    e.seed(10);
+
+    e.seed(i++);
     int temp = 0;
     for (size_t i = 0; i < 10; ++i) {
         temp = e() % maxSize;

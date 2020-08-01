@@ -4,15 +4,23 @@
 
 #include "Common.h"
 #include "MergeSortOrigin.h"
+#include "MergeSortInsertOptimized.h"
 
 int main(void)
 {
     PerformanceCounter counter;
-    const int MAX = 10000000;
+    const int MAX = 1000000;
     int * p = dataGnerator(MAX);
     counter.start();
-    MergeSortOrigion::MergeSort(p, 0, MAX - 1);
+    MergeSortOrigion::MergeSort(p, 0, MAX-1);
     counter.end();
-    return 0;
+    verification(p, MAX);
+    delete[] p;
 
+    p = dataGnerator(MAX);
+    counter.start();
+    MergeSortInsertOptimized::MergeSort(p, 0, MAX - 1);
+    counter.end();
+    verification(p, MAX);
+    delete[] p;
 }

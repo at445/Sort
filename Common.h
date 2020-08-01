@@ -13,5 +13,6 @@ public:
     void start();
     void end();
 };
-int* dataGnerator(int len = 1000000);
+int* dataGnerator(int len);
+int* dataGneratorRandom(int len);
 void verification(int* p, int maxSize);
