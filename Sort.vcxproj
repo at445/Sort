@@ -143,6 +143,7 @@
     <ClCompile Include="MergeSortInsertOptimized.cpp" />
     <ClCompile Include="MergeSortOrigin.cpp" />
     <ClCompile Include="Sort.cpp" />
+    <ClCompile Include="ThreadPooling.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h" />
