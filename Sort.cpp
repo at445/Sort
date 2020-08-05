@@ -5,12 +5,14 @@
 #include "Common.h"
 #include "MergeSortOrigin.h"
 #include "MergeSortInsertOptimized.h"
+#include "MergeSorInsertAndParallel.h"
 
 int main(void)
 {
     PerformanceCounter counter;
-    const int MAX = 10000000;
-    int * p = dataGnerator(MAX);
+    const int MAX = 100000000;
+    int* p = nullptr;
+    p = dataGnerator(MAX);
     counter.start();
     MergeSortOrigion::MergeSort(p, 1, MAX);
     counter.end();
@@ -20,6 +22,15 @@ int main(void)
     p = dataGnerator(MAX);
     counter.start();
     MergeSortInsertOptimized::MergeSort(p, 1, MAX);
+    counter.end();
+    verification(p, MAX);
+    delete[] p;
+
+
+    p = dataGnerator(MAX);
+    MergeSorInsertAndParallel::Init();
+    counter.start();
+    MergeSorInsertAndParallel::Process(p, MAX);
     counter.end();
     verification(p, MAX);
     delete[] p;

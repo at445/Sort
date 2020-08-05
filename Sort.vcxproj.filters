@@ -30,6 +30,9 @@
     <ClCompile Include="ThreadPooling.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="MergeSorInsertAndParallel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MergeSortOrigin.h">
@@ -39,6 +42,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="MergeSortInsertOptimized.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPooling.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MergeSorInsertAndParallel.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
