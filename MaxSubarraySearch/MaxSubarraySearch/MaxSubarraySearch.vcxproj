@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{90b0c5c4-a4ae-495d-9fab-74df4cd6e977}</ProjectGuid>
-    <RootNamespace>Sort</RootNamespace>
+    <ProjectGuid>{309ab31d-94c5-441c-a091-e85d840c0dad}</ProjectGuid>
+    <RootNamespace>MaxSubarraySearch</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -92,10 +92,6 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <HeapReserveSize>102400</HeapReserveSize>
-      <StackReserveSize>102400</StackReserveSize>
-      <HeapCommitSize>102400</HeapCommitSize>
-      <StackCommitSize>102400</StackCommitSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -143,19 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Sort\Common.cpp" />
-    <ClCompile Include="Sort\MergeSorInsertAndParallel.cpp" />
-    <ClCompile Include="Sort\MergeSortInsertOptimized.cpp" />
-    <ClCompile Include="Sort\MergeSortOrigin.cpp" />
-    <ClCompile Include="Sort\Sort.cpp" />
-    <ClCompile Include="Sort\ThreadPooling.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Sort\Common.h" />
-    <ClInclude Include="Sort\MergeSorInsertAndParallel.h" />
-    <ClInclude Include="Sort\MergeSortInsertOptimized.h" />
-    <ClInclude Include="Sort\MergeSortOrigin.h" />
-    <ClInclude Include="Sort\ThreadPooling.h" />
+    <ClCompile Include="MaxSubarraySearch.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

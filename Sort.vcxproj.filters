@@ -15,39 +15,39 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Sort.cpp">
+    <ClCompile Include="Sort\Common.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="MergeSortOrigin.cpp">
+    <ClCompile Include="Sort\MergeSorInsertAndParallel.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Common.cpp">
+    <ClCompile Include="Sort\MergeSortInsertOptimized.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="MergeSortInsertOptimized.cpp">
+    <ClCompile Include="Sort\MergeSortOrigin.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="ThreadPooling.cpp">
+    <ClCompile Include="Sort\Sort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="MergeSorInsertAndParallel.cpp">
+    <ClCompile Include="Sort\ThreadPooling.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MergeSortOrigin.h">
+    <ClInclude Include="Sort\Common.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Common.h">
+    <ClInclude Include="Sort\MergeSorInsertAndParallel.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="MergeSortInsertOptimized.h">
+    <ClInclude Include="Sort\MergeSortInsertOptimized.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="ThreadPooling.h">
+    <ClInclude Include="Sort\MergeSortOrigin.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="MergeSorInsertAndParallel.h">
+    <ClInclude Include="Sort\ThreadPooling.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
